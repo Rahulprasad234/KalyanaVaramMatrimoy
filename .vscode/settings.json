@@ -1,0 +1,16 @@
+{
+  "mssql.connections": [
+    {
+      "profileName": "KalyanaVaram (Azure)",
+      "server": "aspireright.database.windows.net",
+      "database": "KalyanaVaram",
+      "authenticationType": "SqlLogin",
+      "user": "AspireAdmin",
+      "password": "",
+      "savePassword": true,
+      "encrypt": "Mandatory",
+      "trustServerCertificate": false,
+      "port": 1433
+    }
+  ]
+}

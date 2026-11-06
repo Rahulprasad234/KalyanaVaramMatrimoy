@@ -1,0 +1,16 @@
+# Optional: SQL Server in Docker (skip if you already have SQL Server / SQL Express installed)
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: kalyanavaran-sql
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "KalyanaVaran@123"
+      MSSQL_PID: "Developer"
+    ports:
+      - "1433:1433"
+    volumes:
+      - kv_sqldata:/var/opt/mssql
+
+volumes:
+  kv_sqldata:
